@@ -1,12 +1,16 @@
 body {
   background-color: hsl(212, 45%, 89%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+
 @media screen and (min-width: 601px) {
   .card {
+    max-width: 320px;
     text-align: center;
     background-color: hsl(0, 0%, 100%);
-    margin: 5% 40% 5%;
     border-radius: 15px;
   }
 
@@ -33,7 +37,6 @@ body {
     padding-bottom: 5%;
   }
 }
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
   .card {
     text-align: center;
